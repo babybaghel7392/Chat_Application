@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Index page</title>
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+	<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+	<script src="style.js"></script>
+</head>
+
+<body>
+	<div id="name-form" class="d-flex align-items-center">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="input-group">
+						<input type="text" placeholder="Enter your name here" id="form" class="form-control" />
+					</div>
+					<div class="input-group-append">
+						<button class="btn btn-warning" id="login">Enter</button>
+						<!----<button class="btn btn-success" id="login">Logout</button>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="chat-form" class="d-none">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="card mt-3">
+						<div class="card-header">
+							<h2 id="name-title"></h2>
+						</div>
+						<div class="card-body">
+							<div lass="input-group">
+								<input type="text" placeholder="Enter message here" id="message-value" class="form-control" />
+							</div>
+							<div class="input-group-append">
+								<button class="btn btn-warning" id="send">Send</button>
+								<button class="btn btn-success" id="logout">Logout</button>
+							</div>
+						</div>
+						<div class="table-responsive mt-3">
+						<table id="msg-container-table table-bordered">
+					
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
